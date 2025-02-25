@@ -1,0 +1,149 @@
+@layer utilities {
+  .common_table {
+    thead {
+      th {
+        white-space: nowrap;
+      }
+    }
+    
+    .th {
+      @apply text-sm text-[#757982] font-500;
+    }
+    tbody {
+      &:last-child td,
+      &:last-child th {
+        @apply border-none;
+      }
+      tr {
+        @apply border-b-1 pt-12 pb-12 text-[#111827];
+      }
+    }
+    .checkTitle {
+      @apply flex items-center gap-10;
+    }
+    .overlap_imgWrap {
+      @apply flex justify-center;
+      img {
+        @apply h-[34px] w-[34px] rounded-full border-2 border-white ml-[-14px] z-0;
+      }
+      .more_img {
+        @apply h-[34px] w-[34px] flex items-center justify-center text-sm text-white rounded-full border-2 border-white ml-[-10px] z-0;
+      }
+    }
+    .color_tag {
+      @apply inline-flex items-center justify-center rounded-full w-[70px] min-h-[25px] text-sm font-500;
+      &.low {
+        @apply text-[#4CAF50] bg-[#4CAF502E];
+      }
+      &.medium {
+        @apply text-[#FF5F15] bg-[#FF5F152E];
+      }
+      &.high {
+        @apply text-[#F44336] bg-[#F443362E];
+      }
+    }
+    .action_wrap {
+      @apply flex gap-20;
+      & > span {
+        @apply p-2 cursor-pointer;
+      }
+    }
+  }
+}
+.border-design {
+  thead th {
+    white-space: nowrap;
+    
+  }
+
+  .th {
+    @apply text-sm text-grey-500 border border-[#D1D7DB];
+  }
+
+  tbody {
+    td {
+      @apply py-4 px-6;
+    }
+
+    &:last-child td,
+    &:last-child th {
+      // @apply border border-[#D1D7DB];
+    }
+  }
+
+  .checkTitle {
+    @apply flex items-center gap-10;
+  }
+
+  .overlap_imgWrap {
+    @apply flex justify-center;
+
+    img {
+      @apply h-[34px] w-[34px] rounded-full border-2 border-white ml-[-14px] z-0;
+    }
+
+    .more_img {
+      @apply h-[34px] w-[34px] flex items-center justify-center text-sm text-white rounded-full border-2 border-white ml-[-10px] z-0;
+    }
+  }
+
+  .color_tag {
+    @apply inline-flex items-center justify-center rounded-full w-[70px] min-h-[25px] text-sm font-500;
+
+    &.low {
+      @apply text-[#4CAF50] bg-[#4CAF502E];
+    }
+
+    &.medium {
+      @apply text-[#FF5F15] bg-[#FF5F152E];
+    }
+
+    &.high {
+      @apply text-[#F44336] bg-[#F443362E];
+    }
+  }
+
+  .action_wrap {
+    @apply flex gap-20;
+
+    & > span {
+      @apply p-2 cursor-pointer;
+    }
+  }
+}
+
+.mask-box {
+  border-radius: 20px;
+  position: relative;
+  background: #E5CFFF;
+  box-shadow: 1px 1px 2px rgb(165, 165, 165) inset;
+}
+.mask-box .mask {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #8400ED;
+  position: absolute;
+  box-shadow: 1px 0 2px #B473FF;
+  transition: all 0.5s ease;
+}
+.mask-box .MuiButton-root {
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  transition: all 0.2s 0.1s ease;
+}
+.mask-box .MuiButton-root:hover {
+  opacity: 0.8;
+}
+.drop-down-ui.MuiPaper-root {
+  left: 200px !important;
+}
+
+.MuiInputBase-root .MuiSelect-select{
+  line-height: 1.4 !important;
+}
+.no-box-shadow {
+  box-shadow: none !important;
+}

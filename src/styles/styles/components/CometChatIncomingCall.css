@@ -1,0 +1,129 @@
+.cometchat-incoming-call {
+  display: flex;
+  max-width: 360px;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
+  gap: var(--cometchat-padding-4, 16px);
+  border-radius: var(--cometchat-radius-3, 12px);
+  border: 1px solid var(--cometchat-border-color-light, #f5f5f5);
+  background: var(--cometchat-background-color-03, #f5f5f5);
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08),
+    0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+  position: absolute;
+  z-index: 10;
+}
+
+.cometchat-incoming-call .cometchat-list-item {
+  max-width: 320px;
+  padding: 0px;
+  background: var(--cometchat-background-color-03, #f5f5f5);
+}
+
+.cometchat-incoming-call .cometchat-list-item__body {
+  padding: 0px;
+}
+
+.cometchat-incoming-call .cometchat-list-item__body-title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.cometchat-incoming-call .cometchat-list-item__title-container {
+  justify-content: space-around;
+}
+
+.cometchat-incoming-call .cometchat-list-item__trailing-view {
+  width: fit-content;
+  height: fit-content;
+}
+
+.cometchat-incoming-call__button-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.cometchat-incoming-call__button-decline {
+  display: flex;
+  height: 40px;
+  max-width: 152px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--cometchat-padding-2, 8px);
+  align-self: stretch;
+  border-radius: var(--cometchat-radius-2, 8px);
+  background: var(--cometchat-error-color, #c73c3e);
+  cursor: pointer;
+}
+
+.cometchat-incoming-call__button-decline .cometchat-button {
+  max-width: 152px;
+  background: var(--cometchat-error-color, #c73c3e);
+}
+
+.cometchat-incoming-call__button-accept {
+  display: flex;
+  height: 40px;
+  max-width: 152px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--cometchat-padding-2, 8px);
+  align-self: stretch;
+  border-radius: var(--cometchat-radius-2, 8px);
+  background: var(--cometchat-success-color, #0b9f5d);
+  cursor: pointer;
+}
+
+.cometchat-incoming-call__button-accept .cometchat-button {
+  max-width: 152px;
+  background: var(--cometchat-success-color, #0b9f5d);
+}
+
+.cometchat-incoming-call__avatar {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.cometchat-incoming-call__avatar .cometchat-avatar__text {
+  color: var(--cometchat-primary-button-icon, #fff);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.cometchat-incoming-call__subtitle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+}
+
+.cometchat-incoming-call__subtitle-icon {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  justify-content: center;
+  align-items: center;
+  background: var(--cometchat-icon-color-secondary, #a1a1a1);
+  -webkit-mask-size: contain;
+}
+
+.cometchat-incoming-call__subtitle-text {
+  color: var(--cometchat-text-color-secondary, #727272);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.cometchat-incoming-call .cometchat-button:hover {
+  background: transparent;
+}
+
+.cometchat-incoming-call .cometchat-button:active {
+  background: transparent;
+}

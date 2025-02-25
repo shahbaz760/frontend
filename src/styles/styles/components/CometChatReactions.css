@@ -1,0 +1,55 @@
+.cometchat-reactions {
+  display: flex;
+  padding: 0px var(--cometchat-padding-1, 4px);
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 2px;
+  align-self: stretch;
+  width: fit-content;
+  height: fit-content;
+}
+
+.cometchat-reactions__reaction,
+.cometchat-reactions__more-reaction {
+  display: inline-flex;
+  height: 24px;
+  padding: 2px var(--cometchat-padding-2, 8px);
+  align-items: center;
+  gap: var(--cometchat-padding-1, 4px);
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid var(--cometchat-border-color-light, #f5f5f5);
+  background: var(--cometchat-background-color-01, #fff);
+  cursor: pointer;
+}
+
+.cometchat-reactions__reaction-you {
+  display: inline-flex;
+  height: 23px;
+  padding: 2px var(--cometchat-padding-2, 8px);
+  align-items: center;
+  gap: var(--cometchat-padding-1, 4px);
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid var(--cometchat-extended-primary-color-300, #ccc4f1);
+  background: var(--cometchat-extended-primary-color-100, #edeafa);
+}
+
+.cometchat-reactions__reaction-emoji {
+  color: var(--cometchat-text-color-primary, #141414);
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.cometchat-reactions__reaction-count,
+.cometchat-reactions__more-reaction-count {
+  color: var(--cometchat-text-color-primary, #141414);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.cometchat-reactions-info-wrapper .cometchat-popover__content {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}

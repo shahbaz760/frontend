@@ -1,0 +1,123 @@
+/**
+ * Component classes registered by plugins.
+ */
+
+@import "print.css";
+
+@import "tables.css";
+
+@import "prism.css";
+
+@import url("./styles/components/CometChatConversationStarter.css");
+@import url("./styles/components/CometChatSmartReplies.css");
+@import url("./styles/components/CometChatConversationSummary.css");
+@import url("./styles/components/CometChatActionSheet.css");
+@import url("./styles/components/CometChatAudioBubble.css");
+@import url("./styles/components/CometChatAvatar.css");
+@import url("./styles/components/CometChatButton.css");
+@import url("./styles/components/CometChatCallBubble.css");
+@import url("./styles/components/CometChatChangeScope.css");
+@import url("./styles/components/CometChatCheckbox.css");
+@import url("./styles/components/CometChatConfirmDialog.css");
+@import url("./styles/components/CometChatContextMenu.css");
+@import url("./styles/components/CometChatDate.css");
+@import url("./styles/components/CometChatDeleteBubble.css");
+@import url("./styles/components/CometChatDocumentBubble.css");
+@import url("./styles/components/CometChatDropDown.css");
+@import url("./styles/components/CometChatEditPreview.css");
+@import url("./styles/components/CometChatEmojiKeyboard.css");
+@import url("./styles/components/CometChatFileBubble.css");
+@import url("./styles/components/CometChatFullScreenViewer.css");
+@import url("./styles/components/CometChatImageBubble.css");
+@import url("./styles/components/CometChatList.css");
+@import url("./styles/components/CometChatListItem.css");
+@import url("./styles/components/CometChatMediaRecorder.css");
+@import url("./styles/components/CometChatMessageBubble.css");
+@import url("./styles/components/CometChatPopover.css");
+@import url("./styles/components/CometChatQuickView.css");
+@import url("./styles/components/CometChatRadioButton.css");
+@import url("./styles/components/CometChatSearchBar.css");
+@import url("./styles/components/CometChatSingleSelect.css");
+@import url("./styles/components/CometChatTextBubble.css");
+@import url("./styles/components/CometChatVideoBubble.css");
+@import url("./styles/components/CreatePolls.css");
+@import url("./styles/components/LinkPreview.css");
+@import url("./styles/components/MessageTranslationBubble.css");
+@import url("./styles/components/PollsBubble.css");
+@import url("./styles/components/StickersKeyboard.css");
+@import url("./styles/components/CometChatGroupMembers.css");
+@import url("./styles/components/CometChatCallLogs.css");
+@import url("./styles/components/CometChatConversations.css");
+@import url("./styles/components/CometChatUsers.css");
+@import url("./styles/components/CometChatGroups.css");
+@import url("./styles/components/CometChatMessageHeader.css");
+@import url("./styles/components/CometChatMessageComposer.css");
+@import url("./styles/components/CometChatMessageList.css");
+@import url("./styles/components/CometChatOutgoingCall.css");
+@import url("./styles/components/CometChatActionBubble.css");
+@import url("./styles/components/CometChatReactionInfo.css");
+@import url("./styles/components/CometChatReactionList.css");
+@import url("./styles/components/CometChatReactions.css");
+@import url("./styles/components/CometChatCallButtons.css");
+@import url("./styles/components/CometChatIncomingCall.css");
+@import url("./styles/components/CometChatMessageInformation.css");
+@import url("./styles/components/CometChatOngoingCall.css");
+@import url("./styles/components/CometChatThreadedMessagePreview.css");
+@import url("./styles/components/CometChatToast.css");
+
+@tailwind components;
+.test {
+  filter: drop-shadow(1px 1px 20px rgba(214, 215, 227, 0.8));
+}
+
+.notification-data
+  .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8 {
+  border-radius: 15px;
+}
+.cometchat-mentions > span {
+  color: #4f46e5;
+  font-size: 14px;
+}
+.cometchat-mentions {
+  display: inline-block;
+  width: fit-content;
+}
+.cometchat-mentions-outgoing,
+.cometchat-mentions-incoming {
+  border-radius: var(--cometchat-radius, 2px);
+  display: inline-flex;
+  padding: 0px var(--cometchat-padding, 2px);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cometchat-mentions-outgoing.cometchat-mentions-you {
+  background: rgba(255, 171, 0, 0.2);
+}
+.cometchat-mentions-outgoing.cometchat-mentions-other {
+  background: rgba(249, 248, 253, 0.2);
+}
+.cometchat-mentions-incoming.cometchat-mentions-you {
+  background: rgba(255, 171, 0, 0.2);
+}
+.cometchat-mentions-incoming.cometchat-mentions-other {
+  background: rgba(104, 82, 214, 0.2);
+}
+.cometchat-mentions-outgoing.cometchat-mentions-you > span {
+  color: var(--cometchat-warning-color);
+}
+.cometchat-mentions-outgoing.cometchat-mentions-other > span {
+  color: #ffffff;
+}
+.cometchat-mentions-incoming.cometchat-mentions-you > span {
+  color: var(--cometchat-warning-color);
+}
+.cometchat-mentions-incoming.cometchat-mentions-other > span {
+  color: #4f46e5;
+}
+.cometchat-text-bubble-incoming .cometchat-url {
+  color: #0b7bea;
+}
+.cometchat-text-bubble .cometchat-url {
+  text-decoration: underline;
+}

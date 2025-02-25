@@ -1,0 +1,67 @@
+/*
+    This class styles the search container.
+    It uses flexbox to align items horizontally,
+    includes padding, rounded corners, a border,
+    and a background color. It also has flexible sizing for layout adjustments.
+    */
+.cometchat-search-bar {
+  display: flex;
+  padding: var(--cometchat-padding-2, 8px) var(--cometchat-padding-3, 12px);
+  align-items: center;
+  align-self: stretch;
+  border-radius: 10px;
+  border: 1px solid var(--cometchat-border-color-light);
+  background: #f6f6f6;
+  flex: 1 0 0;
+}
+
+/*
+    This class styles the search input field.
+    It occupies the full width and height,
+    has no borders, and inherits the border-radius from its parent.
+    The background is transparent to blend with the container.
+    */
+.cometchat-search-bar__input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: none;
+  background: transparent;
+  color: var(--cometchat-text-color-primary);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  outline: none;
+  padding-left: var(--cometchat-padding-1);
+}
+
+/*
+    This class styles the search icon.
+    It uses a webkit mask to display the search icon,
+    ensures the icon is centered and sized correctly,
+    and uses a background color for the icon.
+    */
+.cometchat-search-bar__icon {
+  -webkit-mask: url("/assets/icons/search.svg") center center no-repeat;
+  mask: url("/assets/icons/search.svg") center center no-repeat;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  background: #141414;
+}
+
+/*
+    This class styles the placeholder text inside the search input field.
+    It sets the text color and font style.
+    The color is a tertiary text color for search placeholder.
+    */
+.cometchat-search-bar__input::placeholder {
+  color: var(--cometchat-text-color-tertiary);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
