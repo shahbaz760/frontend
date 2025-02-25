@@ -37,7 +37,7 @@ jobs:
               run: aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 637527414831.dkr.ecr.us-east-2.amazonaws.com
 
             - name: Build Docker Image
-              run: docker build -t golu .
+              run: docker build -t ssss .
 
             - name: Tag and Push docker image to ECR
               run: |
